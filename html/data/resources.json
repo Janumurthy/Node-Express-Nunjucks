@@ -1,0 +1,22 @@
+{
+	"title" :"Express-Nunjucks",
+	"resources1" : { 
+	      	"card" : "Transforming to one team enterprise culture",
+	     	"link" : "Read Case Study",
+	     	"id":"1",
+	     	"class" : "uk-width-3-5@m"
+	      },
+	"resources2" :[{ 
+	      	"card" : "Driving quality with Agile software development",
+	      	"link" : "Read Case Study",
+	      	"id":"2",
+	      	"class" : "uk-width-2-5@m"
+	      },
+	      { 
+	      	"card" : "Projects at work: How mainstream is Agile project management?",
+	      	"link" : "Read Case Study",
+	      	"id":"3",
+	      	"class" : "uk-width-2-5@m"
+	      }
+	  ]
+}
