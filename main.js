@@ -14,7 +14,7 @@ njIncludeData.install(nunjucksEnv);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/',function(req,res){
-	res.render(path.join(__dirname,'html','/index.html')	)
+	res.render(path.join(__dirname,'html','/index.html'))
 });
 
 var server = app.listen(8082, function () {

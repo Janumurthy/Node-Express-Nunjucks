@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		{% includeData 'data/resources.json' %}
 		<link rel="stylesheet" href="css/uikit.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script type="text/javascript" src="js/uikit.min.js"></script>
@@ -8,29 +9,6 @@
 		<title>{{title}}</title>
 	</head>
 	<body>
-		{% includeData 'data/resources.json' %}
-		<div class="uk-section">
-			<h1>{{resource.title}}</h1>
-			<div class="uk-container uk-flex uk-flex-center">
-					<div uk-grid class="uk-grid-small">
-						<div class="uk-width-3-5@m">
-							<div class="cards card-1 uk-card uk-card-default uk-card-body">
-								<h4 class="uk-title">{{resources1.card}}</h4>
-								<div class="link"><p>{{resources1.link}}</p></div>
-							</div>
-						</div>
-						<div class="uk-width-2-5@m">
-						{% for resource in resources2 %}
-							<div class="cards card-{{resource.id}} uk-card uk-card-default uk-card-body">
-								<h4 class="uk-title">{{resource.card}}</h4>
-								<div class="link"><p>{{resource.link}}</p></div>								
-							</div>
-						{% endfor %}							
-						</div>
-
-					</div>
-					
-	    	</div>		
-	    </div>
+		{% include "resource.html" %}
 	</body>
 </html>
