@@ -2,7 +2,7 @@
   "name": "task-2",
   "version": "1.0.0",
   "description": "reciprocating a simple module",
-  "main": "router.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,5 @@
     "nunjucks-includeData": "0.0.9",
     "uikit": "3.0.0-beta.38"
   },
-  "devDependencies": {},
+  "devDependencies": {}
 }

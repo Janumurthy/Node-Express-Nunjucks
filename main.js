@@ -14,12 +14,9 @@ njIncludeData.install(nunjucksEnv);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
-app.get('/',function(req,res){
+app.use(function(req,res){
+	console.log("This is a "+ req.method + " to "+ req.url)
 	res.render(path.join(__dirname,'html','/index.html'))
 });
-
-var server = app.listen(8080, function () {
-   var host = 'localhost'
-   var port = server.address().port
-   console.log("Listening at http://%s:%s", host, port)
-})
+	
+app.listen(8080,function(){console.log("Rendered the page populated using Nunjucks")});
